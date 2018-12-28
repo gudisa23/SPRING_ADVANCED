@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/spring-framework-4.2.5.RELEASE/libs/spring-beans-4.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/spring-framework-4.2.5.RELEASE/libs/spring-jdbc-4.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/spring-framework-4.2.5.RELEASE/libs/spring-core-4.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/jars/junit-4.9.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/spring-framework-4.2.5.RELEASE/libs/spring-test-4.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/spring-framework-4.2.5.RELEASE/libs/spring-context-4.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/jars/jakarta-commons/commons-logging.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/spring-framework-4.2.5.RELEASE/libs/spring-aop-4.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/spring-framework-4.2.5.RELEASE/libs/spring-expression-4.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/jars/jakarta-commons/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/jars/jakarta-commons/commons-pool.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING/softwares/spring-framework-4.2.5.RELEASE/libs/spring-tx-4.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SPRING ADVANCED/Softwares/jars/ojdbc6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.aspire.pojos.Deposit" table="DEPOSIT">
+		<id name="accno" column="ACCNO" type="integer">
+			<generator class="assigned"/>
+		</id>
+		<property name="name" column="NAME" type="string"/>
+		<property name="amount" column="AMOUNT" type="integer"/>
+	</class>
+</hibernate-mapping>

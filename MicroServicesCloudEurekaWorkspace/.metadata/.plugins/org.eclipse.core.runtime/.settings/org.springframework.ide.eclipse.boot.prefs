@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.actuator=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-config-client=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka-server=1
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=1.5.4.RELEASE
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Eureka Server Configuration
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=edu.aspire
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=1.8
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=edu.aspire.eurekaserver
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.version=1
+org.springframework.ide.eclipse.boot.wizard.initializr.url=http\://start.spring.io\n

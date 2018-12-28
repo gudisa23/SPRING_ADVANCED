@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SearchFlightTickets"/>
+<aop-project name="CheckInCustomers"/>
+<aop-project name="FaresFlightTickets"/>
+<aop-project name="FaresFlightTickets2"/>
+<aop-project name="BookingFlightTickets"/>
+<aop-project name="ConfigServer"/>
+<aop-project name="FlightsWebSite"/>
+</aop-reference-model>

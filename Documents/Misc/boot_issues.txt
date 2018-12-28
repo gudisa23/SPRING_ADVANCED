@@ -1,0 +1,73 @@
+1)
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.annotation.SynthesizingMethodParameter
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>4.2.3.RELEASE</version>
+</dependency>
+
+2) web.xml is missing and <failOnMissingWebXml> is set to true pom.xml
+<properties>
+	<failOnMissingWebXml>false</failOnMissingWebXml>
+</properties>
+
+3) Cannot change version of project facet Dynamic Web Module to 3.1
+Switch to Navigator view, Double click on .settings directory and open 'org.eclipse.wst.common.project.facet.core.xml'
+<installed facet="jst.web" version="3.1"/>
+For more details, refer http://stackoverflow.com/questions/18122336/cannot-change-version-of-project-facet-dynamic-web-module-to-3-0
+
+4) java.net.BindException: Address already in use: bind
+   Add server.port = 8084 in src/main/resources/application.properties
+For more details, refer https://www.mkyong.com/spring-boot/spring-boot-how-to-change-tomcat-port/
+
+5) https://smarterco.de/java-spring-boot-mvc-controller-not-called/
+Lets take a look at the @SpringBootApplication annotation:
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@ComponentScan
+public @interface SpringBootApplication {
+	...
+}			  	
+
+The @ComponentScan annotation scans the packages for Spring components but not scan in our packages. Hence by default @SpringBootApplication will execute our package scan for scan.
+Hence we need to specify our package name using 'scanBasePackage' attr of @SpringBootApplication.
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+@SpringBootApplication(scanBasePackages={"edu.aspire"})
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+
+6) Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private edu.aspire.entities.UserRepository edu.aspire.controllers.HomeController.userRepo; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [edu.aspire.entities.UserRepository] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+We need to specify our package name using 'basePackages' attr of @EnableJpaRepositories
+package edu.aspire.test;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+@SpringBootApplication(scanBasePackages={"edu.aspire"})
+@EnableJpaRepositories(basePackages={"edu.aspire"})
+public class Application {
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+}
+
+7) org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'homeController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private edu.aspire.entities.UserRepository edu.aspire.controllers.HomeController.userRepo; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not an managed type: class edu.aspire.entities.User
+@SpringBootApplication(scanBasePackages={"edu.aspire"})
+@EnableJpaRepositories(basePackages={"edu.aspire"})
+@EntityScan(basePackages={"edu.aspire"})
+public class Application {
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+}
+Refer "http://stackoverflow.com/questions/28664064/spring-boot-not-an-managed-type"
+
+8) org.thymeleaf.exceptions.TemplateInputException: Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers
+Copy /WEB-INF/views/index.html that we created in SpringMvcJpa application into src/main/resources/templates folder in our new project.
+
+
+

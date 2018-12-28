@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: FormProcessing Using Spring Boot
+Implementation-Version: 1
+Built-By: Aspire-Ramesh
+Implementation-Vendor-Id: edu.aspire
+Build-Jdk: 1.8.0_65
+Implementation-URL: www.java2aspire.com
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

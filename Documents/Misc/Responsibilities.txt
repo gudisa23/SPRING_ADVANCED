@@ -1,0 +1,7 @@
+1) Used Spring Boot Autoconfiguration for built-in classes.
+2) Added Spring Boot Starter dependencies in Maven Config file.
+3) Used Embedded Tomcat Server and actuator end points.
+4) Developed Model Layer using JpaRepository in Spring Data Jpa.
+5) Designed and Implemented Microservices using Spring Boot. Created a separate schema per every microservice in database design.
+6) Added both REST and Messaging End points to communicate microservices through HTTP and AMQP protocols using RabbitMQ Server.
+7) Implemented Cloud capabilities like Centralized Configuration, Load Balancing, Service-to-Service call using Fiegn, Service Registry and Discovery using Eureka in Spring Cloud.

@@ -1,0 +1,11 @@
+1) curl
+If you install Git for Windows you get Curl automatically too. You get the GNU bash, a really powerful shell, in my opinion much better than the native Windows console.
+Double click on "D:\Program Files\Git\git-bash.exe"
+Ref: https://superuser.com/questions/134685/run-curl-commands-from-windows-console
+
+2) curl -d {} http://localhost:8080/refresh 
+{"timestamp":1487113045770,"status":401,"error":"Unauthorized","message":"Full authentication is required to access this resource.","path":"/refresh"}
+sol) Add below property in SearchFlightTickets project
+#bootstrap.properties
+management.security.enabled=false
+Ref: https://github.com/spring-guides/gs-centralized-configuration/issues/5

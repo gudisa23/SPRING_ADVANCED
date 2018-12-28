@@ -1,0 +1,7 @@
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: fares-proxy
+sol) Add below dependency in pom.xml
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-config</artifactId>
+</dependency>
+

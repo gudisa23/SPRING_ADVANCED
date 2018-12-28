@@ -1,0 +1,61 @@
+Spring Boot
+===========
+https://dzone.com/articles/why-springboot
+https://dzone.com/articles/springboot-introducing
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-using-springbootapplication-annotation
+https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#common-application-properties
+
+JSP Limitions
+=============
+https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-jsp-limitations
+https://dzone.com/articles/spring-boot-with-jsps-in-executable-jars-1
+http://www.logicbig.com/tutorials/spring-framework/spring-boot/
+http://www.logicbig.com/tutorials/spring-framework/spring-boot/boot-serve-dynamic/   -- jsp boot example working
+
+Spring Boot Test
+================
+https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html
+
+Spring Data JPA
+===============
+1) https://spring.io/blog/2011/02/10/getting-started-with-spring-data-jpa/
+2) http://docs.spring.io/spring-data/jpa/docs/1.4.1.RELEASE/reference/html/jpa.repositories.html
+
+Spring JMS
+==========
+http://www.javatpoint.com/spring-and-jms-integration
+https://examples.javacodegeeks.com/enterprise-java/spring/spring-jms-example/
+
+Spring Batch
+============
+https://www.mkyong.com/spring-batch/spring-batch-hello-world-example/
+http://www.mkyong.com/tutorials/spring-batch-tutorial/
+https://dzone.com/articles/spring-batch-hello-world-1
+
+Spring Microservices
+====================
+https://www.safaribooksonline.com/library/view/spring-microservices/9781786466686/
+https://spring.io/blog/2015/07/14/microservices-with-spring
+
+H2
+==
+http://h2database.com/html/quickstart.html
+http://h2database.com/html/download.html
+
+curl
+====
+https://superuser.com/questions/134685/run-curl-commands-from-windows-console
+
+
+Spring Security
+===============
+https://github.com/dsyer/spring-security-architecture
+
+JSON Editor
+==========
+http://www.jsoneditoronline.org/
+
+Schema creation
+===============
+1) https://www.techonthenet.com/oracle/schemas/create_schema.php
+2) https://stackoverflow.com/questions/9873793/creating-multiple-schemas-for-a-user-oracle-11g

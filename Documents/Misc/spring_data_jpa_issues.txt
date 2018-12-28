@@ -1,0 +1,15 @@
+1) The type DepartDaoImpl must implement the inherited abstract method JpaRepository<Department,Integer>.saveAndFlush(Department)
+solution: Add latest spring data jpa jar such as spring-data-jpa-2.0.0.M1.jar
+
+2) The type org.springframework.data.repository.query.QueryByExampleExecutor cannot be resolved. It is indirectly referenced from required .class files
+solution: Add latest spring data commons spring-data-commons-2.0.0.M1.jar
+
+3) Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+   Spring Data JPA by default looks for an EntityManagerFactory named 'entityManagerFactory'
+   @Bean
+   public LocalContainerEntityManagerFactoryBean entityManagerFactory(-,-){
+	...
+   }
+
+Ref link: http://stackoverflow.com/questions/24520602/spring-data-jpa-no-bean-named-entitymanagerfactory-is-defined-injection-of-a
+

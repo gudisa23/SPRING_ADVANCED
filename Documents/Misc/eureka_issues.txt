@@ -1,0 +1,18 @@
+1) com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+sol) Restart both config & eureka server.
+
+2) Caused by: feign.RetryableException: Read timed out executing GET http://
+sol) Don't forget Zuul is using Hystric underneath - so you may well have a Hystrix timeout instead (1000ms by default). You can either disable the timeout feature of Hystrix or increase its value:
+# Disable Hystrix timeout globally (for all services)
+hystrix.command.default.execution.timeout.enabled=false
+
+# Disable Hystrix timeout for a single service
+hystrix.command.<serviceName>.execution.timeout.enabled=false
+
+# Increase the Hystrix timeout to 60s (globally)
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+
+# Increase the Hystrix timeout to 60s (per service)
+hystrix.command.<serviceName>.execution.isolation.thread.timeoutInMilliseconds: 60000
+
+Link: https://github.com/spring-cloud/spring-cloud-netflix/issues/321

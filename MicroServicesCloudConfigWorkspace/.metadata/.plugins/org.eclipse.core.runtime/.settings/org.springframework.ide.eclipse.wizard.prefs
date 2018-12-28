@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.actuator=2
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PopularityTracker.cloud-config-server=2
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.artifactId=ConfigServer
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.bootVersion=1.5.4.RELEASE
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.description=Spring Config Server
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.groupId=edu.aspire
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.javaVersion=1.8
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.language=java
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.name=ConfigServer
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.packageName=edu.aspire.config
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.packaging=jar
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.type=MAVEN
+org.springframework.ide.eclipse.wizard.gettingstarted.boot.PreferredSelections.version=1

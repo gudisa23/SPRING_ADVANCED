@@ -1,0 +1,5 @@
+D:\Program Files\RabbitMQ Server\rabbitmq_server-3.6.9\sbin>rabbitmq-plugins enable rabbitmq_management
+
+http://localhost:15672
+username: guest
+password: guest

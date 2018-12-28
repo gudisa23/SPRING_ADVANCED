@@ -1,0 +1,10 @@
+1) Refer http://www.javatpoint.com/spring-and-jms-integration
+	Download Apache ActiveMQ Server from http://activemq.apache.org/activemq-5144-release.html
+		apache-activemq-5.14.4-bin.zip
+
+2) http://localhost:8161/admin/
+	username: admin
+	password: admin
+For more details open D:\SPRING\softwares\apache-activemq-5.14.4-bin\apache-activemq-5.14.4\conf\jetty-realm.properties
+
+

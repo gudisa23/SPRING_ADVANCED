@@ -1,0 +1,20 @@
+Download "Oracle Database Express Edition 11g Release 2 for Windows x32" from below link. It is already tested and works for both 32-bit as well as 64-bit Windows OS.
+http://www.oracle.com/technetwork/products/express-edition/downloads/index.html#
+ 
+Username: ramesh@aspirecareers.in
+Password: Aspire24
+
+The Oracle Express Edition installation automatically comes with "system" & "sys" accounts. During installation, we have to enter common password for both accounts. The standard password is "manager". However you can give different password.
+
+Once installation completes, the %ORACLE_HOME%\bin folder should be automatically added to path.
+c:\>echo %PATH%
+C:\oraclexe\app\oracle\product\11.2.0\server\bin
+
+Check oracle services are started.
+Run--> services.msc
+OracleServiceXE --"Started" status --> Statup type is "Automatic"
+OracleXETNSListener --"Started" status --> Statup type is "Automatic"
+
+Connect to SQL prompt
+c:\>sqlplus system/manager@xe
+sql:\>
